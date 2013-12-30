@@ -1,6 +1,8 @@
 " ======= 通用设置 ======= "
 execute pathogen#infect()
 execute pathogen#helptags()
+syntax on
+filetype plugin indent on
 color molokai 
 set number
 set ruler
@@ -8,7 +10,6 @@ set background=dark
 set foldmethod=indent
 
 " 自动切换语法高亮
-syntax on
 function! ToggleSyntax()
     if exists("g:syntax_on")
         syntax off
@@ -36,7 +37,6 @@ function ClosePair(char)
     endif
 endf
 
-filetype plugin indent on
 set tabstop=8
 set softtabstop=4
 set expandtab
@@ -62,4 +62,3 @@ let g:yankring_history_dir = '~/.vim/bundle/yankring'
 " ===== latex-box 设定 ====="
 let g:LatexBox_output_type = "pdf"
 let g:LatexBox_viewer = "open"
-let g:LatexBox_quickfix = 2
