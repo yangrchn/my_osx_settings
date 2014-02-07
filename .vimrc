@@ -1,13 +1,14 @@
 " ======= 通用设置 ======= "
+" aa "
 execute pathogen#infect()
 execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 color molokai 
+set guifont=Monaco:h16
 set number
 set ruler
 set background=dark
-set foldmethod=indent
 
 " 自动切换语法高亮
 function! ToggleSyntax()
@@ -62,3 +63,4 @@ let g:yankring_history_dir = '~/.vim/bundle/yankring'
 " ===== latex-box 设定 ====="
 let g:LatexBox_output_type = "pdf"
 let g:LatexBox_viewer = "open"
+let g:LatexBox_quickfix = 1
